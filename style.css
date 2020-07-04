@@ -1,0 +1,31 @@
+.summary {
+  position: relative;
+  top: -100px;
+}
+.box {
+  position: relative;
+  top: -50px;
+}
+/* body {
+  background-image: url("g5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+} */
+
+body {
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+}
+
+.jumbotron {
+  background: rgb(59, 127, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 127, 88, 1) 0%,
+    rgba(155, 204, 176, 1) 100%
+  );
+}
+
+h2 {
+  font-family: sans-serif;
+}

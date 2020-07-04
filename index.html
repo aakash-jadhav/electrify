@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  </head>
+  <body class="bg-light">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-white">
+        <h1 class="display-4 text-center">Electrify</h1>
+        <p class="lead text-center">
+          Go green, Go electric
+        </p>
+        <hr class="my-4" color="white" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card summary">
+            <div class="card-block">
+              <p class="card-text text-justify">
+                Electrify, Inc. engages in the design, development, manufacture,
+                and sale of fully electric vehicles, energy generation and
+                storage systems. It also provides vehicle service centers,
+                supercharger station, and self-driving capability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-muted">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card box">
+            <div class="card-block">
+              <div class="form-group loginform">
+                <!-- alert example-->
+                <div id="alertLogin" role="alert"></div>
+
+                <h2>Sign in</h2>
+                <label>Email</label>
+                <input type="text" class="form-control" id="txtEmail" />
+                <label class="my-2">Password</label>
+                <input type="password" class="form-control" id="txtPassword" />
+                <input
+                  type="submit"
+                  value="Sign in"
+                  class="btn btn-success my-3 col-sm-3"
+                  id="btnLogin"
+                />
+
+                <span class="col-sm-3"
+                  >Don't have an account?
+                  <a data-toggle="collapse" href="#collapseExample">
+                    Sign up
+                  </a>
+                </span>
+              </div>
+              <div class="collapse" id="collapseExample">
+                <div class="form-group signupform">
+                  <hr class="my-4" />
+                  <div id="alertSignUp" role="alert"></div>
+                  <h2>Sign up</h2>
+                  <label for="userName">Name</label>
+                  <input type="text" class="form-control" id="signUpUserName" />
+                  <label for="signUpemail">Email</label>
+                  <input type="text" class="form-control" id="signUpEmail" />
+                  <label class="my-2" for="signUpPassword">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="signUpPassword"
+                  />
+                  <input
+                    type="submit"
+                    value="Sign up"
+                    class="btn btn-danger my-3 col-sm-3"
+                    id="btnSignUp"
+                  />
+                  <span class="col-sm-3"
+                    >Already have an account?
+                    <a data-toggle="collapse" href="#collapseExample"
+                      >Sign in</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script src="app.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
