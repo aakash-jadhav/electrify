@@ -1,0 +1,13 @@
+body,
+html {
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#title {
+  font-size: xx-large;
+}

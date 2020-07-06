@@ -1,5 +1,4 @@
 (function () {
-  console.log("Beautiful");
   const firebaseConfig = {
     apiKey: "AIzaSyBt8l-yPXhyImLSTlsB-B3iQMisXB-h644",
     authDomain: "electrify-dab2d.firebaseapp.com",
@@ -32,7 +31,7 @@
 
     const promise = auth.signInWithEmailAndPassword(lEmail.value, lPass.value);
     promise.catch((e) => {
-      console.log(e.message);
+      //console.log(e.message);
       alertdiv.classList.add("alert", "alert-danger");
       var text = document.createTextNode(
         "Login Unsuccessful, something went wrong"
@@ -66,10 +65,10 @@
   //realtime listener
   firebase.auth().onAuthStateChanged((firebaseUser) => {
     if (firebaseUser) {
-      console.log(firebaseUser);
+      //console.log(firebaseUser);
       window.location.href = "dashboard.html";
     } else {
-      console.log("not logged in");
+      //console.log("not logged in");
     }
   });
 })();

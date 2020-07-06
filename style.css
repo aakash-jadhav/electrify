@@ -13,8 +13,14 @@
   background-size: auto;
 } */
 
-body {
-  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+body,
+html {
+  background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .jumbotron {
